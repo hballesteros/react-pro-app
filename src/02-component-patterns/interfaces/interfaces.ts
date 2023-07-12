@@ -22,3 +22,12 @@ export interface ProductCardHOCProps {
     Image: (Props: ProductImageProps) => ReactElement,
     Title: (Props: ProductTitleProps) => ReactElement,
 }
+
+export interface onChangesArgs {
+    counter: number;
+    product: Product;
+}
+
+export interface ProductInCart extends Product {
+    count: number;
+}
