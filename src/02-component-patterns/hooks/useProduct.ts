@@ -14,9 +14,6 @@ export const useProduct = ({ onChange, product, value = 0, initialValues }: useP
     const [counter, setCounter] = useState<number>( initialValues?.count || value );
     const isMounted = useRef(false);
 
-    console.log(initialValues?.count);
-    
-
     const increaseBy = (value: number) => {
 
         //if( initialValues?.maxCount && counter + value > initialValues.maxCount ) return;
