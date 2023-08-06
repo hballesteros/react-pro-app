@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 import '../styles/styles.css';
 
 
-const FormikComponents = () => {
+export const FormikComponents = () => {
 
     return (
         <div>
@@ -85,4 +85,3 @@ const FormikComponents = () => {
     )
 }
 
-export default FormikComponents
