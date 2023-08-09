@@ -1,0 +1,101 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Hugo",
+        "label": "First Name",
+        "value": "",
+        "validations":[
+            {
+                "type": "required",
+                "message": "This field is required"
+            },
+            {
+                "type": "minLength",
+                "value": 3,
+                "message": "This field must have at least 3 characters"
+            },
+            {
+                "type": "maxLength",
+                "value": 10,
+                "message": "This field must have at most 10 characters"
+            },
+            {
+                "type": "pattern",
+                "value": "^[a-zA-Z]*$",
+                "message": "This field must only contain letters"
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Ballesteros",
+        "label": "Last Name",
+        "value": "",
+        "validations":[
+            {
+                "type": "required",
+                "message": "This field is required"
+            },
+            {
+                "type": "minLength",
+                "value": 3,
+                "message": "This field must have at least 3 characters"
+            },
+            {
+                "type": "maxLength",
+                "value": 10,
+                "message": "This field must have at most 10 characters"
+            },
+            {
+                "type": "pattern",
+                "value": "^[a-zA-Z]*$",
+                "message": "This field must only contain letters"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "huguichu@gmail.com",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "message": "This field is required"
+            },
+            {
+                "type": "email",
+                "message": "This field must be a valid email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "country",
+        "label": "Country",
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "label": "Colombia"
+            },
+            {
+                "id": 2,
+                "label": "Mexico"
+            },
+            {
+                "id": 3,
+                "label": "USA"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required",
+                "message": "This field is required"
+            }
+        ]
+    }
+]
